@@ -5,7 +5,7 @@
     {
         for(int j = 0; j < arr.GetLength(1); j++)
         {
-            if(i % 2 == 0 && j % 2 == 0) arr[i, j] = (int)Math.Pow(new Random().Next(min, max + 1), 2);
+            if(i % 2 != 0 && j % 2 != 0) arr[i, j] = (int)Math.Pow(new Random().Next(min, max + 1), 2);
             else arr[i, j] = new Random().Next(min, max + 1);
         }
     }
@@ -24,6 +24,6 @@ void PrintDoubArr(int[,] arr)
     }
 }
 
-int[,] myArr = GenDoubArr(9, 9, 0, 5);
+int[,] myArr = GenDoubArr(9, 9, 5, 5);
 PrintDoubArr(myArr);
 
