@@ -42,7 +42,6 @@ string ContainDoubArr(int[,] arr, int num)
         }
     }
     Found: return text;
-    
 }
 
 int[,] myArr = GenDoubArr(3, 3, 1, 9);
