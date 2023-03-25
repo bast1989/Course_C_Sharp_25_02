@@ -2,7 +2,7 @@
 {
     if(finish == start - 1) return;
     ValueSet(start, finish - 1);
-    if(finish % 2 == 0) Console.Write($"{finish} ");
+    if(finish % 2 == 0 && finish >= 0) Console.Write($"{finish} ");
 }
 
 
